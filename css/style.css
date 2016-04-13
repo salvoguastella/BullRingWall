@@ -221,6 +221,9 @@ div.more{
 	#columns figure {
 		width: 100%;
 	}
+	#columns figure:first-child {
+		margin-top:10px;
+	}
 	.header .small{
 		width:80px;
 		padding:5px 0;
