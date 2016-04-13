@@ -56,8 +56,10 @@ $(document).ready(function() {
 		    		myPost.getElem=function(){
 		    			var elem = "";
 		    			elem+="<div class='"+this.service_name+"' rel='"+this.item_id+"'>";
-			    			elem+="<img src='"+this.avatar+"' rel='"+this.user_id+"' />";
-			    			elem+="<span>"+this.username+"</span>";
+			    			elem+="<div class='user_container'>";
+				    			elem+="<img src='"+this.avatar+"' rel='"+this.user_id+"' />";
+				    			elem+="<span>"+this.username+"</span>";
+				    		elem+="</div>";
 			    			elem+="<p>"+findTwitterUsername(findTwitterHashtag(findUrl(this.tweet)))+"</p>";
 		    			elem+="</div>";
 
@@ -81,7 +83,8 @@ $(document).ready(function() {
 		    		myPost.getElem=function(){
 		    			var elem = "";
 		    			elem+="<div class='"+this.service_name+"' rel='"+this.item_id+"'>";
-			    			elem+="<a href='"+this.link+"' target='_blank'><img src='"+this.thumb+"' rel='"+this.user_id+"' /></a>";
+		    				elem+="<a href='https://www.instagram.com/"+this.username+"/' target='_blank' class='avatar'><img src='"+this.avatar+"' rel='"+this.user_id+"' /></a>";
+			    			elem+="<a href='"+this.link+"' target='_blank' class='photo'><img src='"+this.thumb+"' rel='"+this.user_id+"' /></a>";
 			    			elem+="<span>"+findInstagramHashtag(findUrl(this.caption));+"</span1>";
 		    			elem+="</div>";
 
@@ -93,7 +96,7 @@ $(document).ready(function() {
 		    		console.log("Error");
 		    }
 		    posts.push(myPost);
-		    $(".main ul").append("<li>"+myPost.getElem()+"</li>");
+		    $(".main div#columns").append("<figure>"+myPost.getElem()+"</figure>");
 		  });
 	})
 	.fail(function() {
