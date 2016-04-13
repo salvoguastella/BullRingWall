@@ -12,18 +12,35 @@
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" media="screen" href="css/style.css?<?php echo time(); ?>" />
+<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/script.js?<?php echo time(); ?>"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </head>
 
 <body>
 
-<img src="img/#" class='preload_img' />
+<img src="../img/1.jpg" class='preload_img' />
+<img src="../img/2.jpg" class='preload_img' />
+<img src="../img/3.jpg" class='preload_img' />
+<img src="../img/4.jpg" class='preload_img' />
 
+    <div class='header'>
+    	<div class='big h_all'>
+	    	<div class='small selected h_all' rel='h_all'><i class='fa fa-star'></i></div>
+	    	<div class='small h_manual' rel='h_manual'><i class='fa fa-comment'></i></div>
+	    	<div class='small h_twitter' rel='h_twitter'><i class='fa fa-twitter'></i></div>
+	    	<div class='small h_instagram' rel='h_instagram'><i class='fa fa-instagram'></i></div>
+    	</div>
+    </div>
     <div class='main'>
     	<div id='columns'></div>
+    </div>
+
+    <div class='more'>
+    	Older posts
     </div>
 
 </body>
