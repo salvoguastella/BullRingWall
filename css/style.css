@@ -1,0 +1,66 @@
+*{
+	box-sizing:border-box;
+ 	
+}
+
+.noselect{
+  	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+  	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+  	-khtml-user-select: none;    /* Konqueror */
+  	-moz-user-select: none;      /* Firefox */
+  	-ms-user-select: none;       /* IE/Edge */
+  	user-select: none;   	
+}
+
+.noselect::selection{
+	background: white;	
+}
+
+.noselect::-moz-selection{
+	background: white;	
+}
+
+
+body{
+	font-family: 'Dosis', sans-serif;	
+	font-size:14px;
+	margin:0;
+	padding:0;
+}
+
+.clearer{
+	clear:both;	
+}
+
+.preload_img{
+	position:absolute;
+	top:-999999px;	
+}
+
+.main{
+	width:100%;		
+}
+
+
+/* schermo grande 16:9  ----------- */
+@media only screen  and (min-aspect-ratio: 16/9) {
+	
+
+}
+
+
+/* schermo piccolo  ----------- */
+@media only screen  and (max-width : 1024px){
+		
+
+}
+
+
+/* Smartphones  */
+@media only screen and (max-width : 720px){
+
+}
+
+
+
